@@ -14,10 +14,11 @@ SECRET_KEY = os.environ.get(
 
 DEBUG = os.environ.get("DEBUG", "True") == "True"
 
-ALLOWED_HOSTS = os.environ.get(
-    "ALLOWED_HOSTS",
-    "localhost,127.0.0.1"
-).split(",")
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "your-render-service.onrender.com",
+]
 
 CSRF_TRUSTED_ORIGINS = [
     os.environ.get("FRONTEND_ORIGIN", "http://localhost:5173")
