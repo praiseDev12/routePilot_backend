@@ -17,7 +17,7 @@ DEBUG = os.environ.get("DEBUG", "True") == "True"
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
-    "your-render-service.onrender.com",
+    "routepilot-backend.onrender.com",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
