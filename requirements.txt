@@ -1,0 +1,6 @@
+django>=4.2,<5.0
+djangorestframework>=3.15
+django-cors-headers>=4.3
+python-dotenv>=1.0
+requests>=2.31
+gunicorn>=21.2        # production WSGI server (replaces `node src/index.js`)
